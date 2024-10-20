@@ -1,15 +1,13 @@
 package Pages;
 
 import Base.BaseTest;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomepagePage extends BaseTest {
+public class LoginPage extends BaseTest {
 
-    public HomepagePage() {
+    public LoginPage() {
         PageFactory.initElements(driver, this);
     }
 
