@@ -1,6 +1,7 @@
 package Tests;
 
 import Base.BaseTest;
+import Base.ExcelReader;
 import Pages.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -8,14 +9,16 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.time.Duration;
 
 public class LoginTest extends BaseTest {
 
     @BeforeMethod
-    public void pageSetUp() {
+    public void pageSetUp() throws IOException {
         driver = new ChromeDriver();
         loginPage = new LoginPage();
+
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
         driver.navigate().to("https://www.saucedemo.com/");
@@ -34,7 +37,7 @@ public class LoginTest extends BaseTest {
 
     //TestCase002
     @Test (priority = 2)
-    public void userLoginWithValidCredentials () {
+    public void userCanLoginWithValidCredentials () {
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("standard_user");
         loginPage.passwordField.clear();
@@ -45,7 +48,7 @@ public class LoginTest extends BaseTest {
 
     //TestCase003
     @Test (priority = 3)
-    public void userLoginWithInvalidUsername () {
+    public void userCanNotLoginWithInvalidUsernameValidPassword () {
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("invalidusername");
         loginPage.passwordField.clear();
@@ -57,7 +60,7 @@ public class LoginTest extends BaseTest {
 
     //TestCase004
     @Test (priority = 4)
-    public void userLoginWithInvalidPassword () {
+    public void userCanNotLoginWithValidUsernameInvalidPassword () {
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("standard_user");
         loginPage.passwordField.clear();
@@ -68,18 +71,16 @@ public class LoginTest extends BaseTest {
     }
 
     @Test (priority = 5)
-    public void userLoginWithEmptyCredentials () {
+    public void userCanNotLoginWithEmptyCredentials () {
         loginPage.usernameField.clear();
         loginPage.passwordField.clear();
         loginPage.clickOnLoginButton();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/");
         Assert.assertEquals(loginPage.errorMessage.getText(), "Epic sadface: Username is required");
     }
-    //Login Tests with Excel data
-
 
    @AfterMethod
-   public void closeBrowser() {
+   public void tearDown() {
        driver.close();
     }
 }

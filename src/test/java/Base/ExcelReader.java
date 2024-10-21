@@ -37,7 +37,8 @@ public class ExcelReader {
         return (int) cell.getNumericCellValue();
     }
 
-    public int getLastRowNumber() {
-        return sheet.getLastRowNum();
+    public int getLastRow(String sheet) {
+        this.sheet = wb.getSheet(sheet);
+        return this.sheet.getLastRowNum();
     }
 }
