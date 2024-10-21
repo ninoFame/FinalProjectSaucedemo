@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d00495-f1a6-47b5-9188-ee785fc52e67" name="Changes" comment="Basic login tests added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/InventoryDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestExcel.java" afterDir="false" />
+    <list default="true" id="f3d00495-f1a6-47b5-9188-ee785fc52e67" name="Changes" comment="Test Cases For &quot;Inventory Page&quot; and &quot;Inventory Details Page&quot; added">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/CheckoutPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/ExcelReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/InventoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CartPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +54,20 @@
     "JUnit.Tests in FinalProjectSaucedemo.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CartPageTest.checkoutRedirection.executor": "Run",
+    "TestNG.CartPageTest.removeItemFromCart.executor": "Run",
+    "TestNG.CartPageTest.returnToInventoryPage.executor": "Run",
     "TestNG.InventoryPageTest.AddItemToCartFromTheInventoryDetailsPage.executor": "Run",
     "TestNG.InventoryPageTest.addAll.executor": "Run",
     "TestNG.InventoryPageTest.addAllItemsToCart.executor": "Run",
     "TestNG.InventoryPageTest.addOneItemToCart.executor": "Run",
+    "TestNG.InventoryPageTest.addSpecifiedNumberOfItemsToCart.executor": "Run",
     "TestNG.InventoryPageTest.clickAndViewOneProduct.executor": "Run",
     "TestNG.InventoryPageTest.executor": "Run",
     "TestNG.InventoryPageTest.removeAllItemsFromCart.executor": "Run",
     "TestNG.InventoryPageTest.removeItemToCartFromTheInventoryDetailsPage.executor": "Run",
     "TestNG.InventoryPageTest.removeOneItemToCart.executor": "Run",
+    "TestNG.InventoryPageTest.resetAppState.executor": "Run",
     "TestNG.InventoryPageTest.sortItems.executor": "Run",
     "TestNG.InventoryPageTest.userCanLogOut.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
@@ -82,8 +85,8 @@
       <recent name="C:\Users\sm-denkovicn\Downloads\FinalProjectSaucedemo\demoFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.InventoryPageTest.resetAppState">
-    <configuration name="InventoryPageTest.addAll" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CartPageTest.checkoutRedirection">
+    <configuration name="CartPageTest.checkoutRedirection" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
@@ -92,8 +95,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.InventoryPageTest" />
-      <option name="METHOD_NAME" value="addAll" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
+      <option name="METHOD_NAME" value="checkoutRedirection" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -101,7 +104,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryPageTest.addAllItemsToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CartPageTest.removeItemFromCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProjectSaucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
+      <option name="METHOD_NAME" value="removeItemFromCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartPageTest.returnToInventoryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProjectSaucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.CartPageTest" />
+      <option name="METHOD_NAME" value="returnToInventoryPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryPageTest.addSpecifiedNumberOfItemsToCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +150,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.InventoryPageTest" />
-      <option name="METHOD_NAME" value="addAllItemsToCart" />
+      <option name="METHOD_NAME" value="addSpecifiedNumberOfItemsToCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -137,49 +176,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryPageTest.removeItemToCartFromTheInventoryDetailsPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FinalProjectSaucedemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.InventoryPageTest" />
-      <option name="METHOD_NAME" value="removeItemToCartFromTheInventoryDetailsPage" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InventoryPageTest.resetAppState" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FinalProjectSaucedemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.InventoryPageTest" />
-      <option name="METHOD_NAME" value="resetAppState" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.InventoryPageTest.resetAppState" />
+        <item itemvalue="TestNG.CartPageTest.checkoutRedirection" />
+        <item itemvalue="TestNG.CartPageTest.removeItemFromCart" />
         <item itemvalue="TestNG.InventoryPageTest.removeAllItemsFromCart" />
-        <item itemvalue="TestNG.InventoryPageTest.addAllItemsToCart" />
-        <item itemvalue="TestNG.InventoryPageTest.addAll" />
-        <item itemvalue="TestNG.InventoryPageTest.removeItemToCartFromTheInventoryDetailsPage" />
+        <item itemvalue="TestNG.CartPageTest.returnToInventoryPage" />
+        <item itemvalue="TestNG.InventoryPageTest.addSpecifiedNumberOfItemsToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729462295225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test Cases For &quot;Inventory Page&quot; and &quot;Inventory Details Page&quot; added">
+      <option name="closed" value="true" />
+      <created>1729537985512</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729537985512</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +236,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="Basic login tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic login tests added" />
+    <MESSAGE value="Test Cases For &quot;Inventory Page&quot; and &quot;Inventory Details Page&quot; added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Cases For &quot;Inventory Page&quot; and &quot;Inventory Details Page&quot; added" />
   </component>
 </project>

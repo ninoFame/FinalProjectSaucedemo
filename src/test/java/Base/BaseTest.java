@@ -1,9 +1,6 @@
 package Base;
 
-import Pages.CartPage;
-import Pages.InventoryDetailsPage;
-import Pages.InventoryPage;
-import Pages.LoginPage;
+import Pages.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,6 +16,7 @@ public class BaseTest {
     public InventoryPage inventoryPage;
     public CartPage cartPage;
     public InventoryDetailsPage inventoryDetailsPage;
+    public CheckoutPages checkoutPages;
 
     @BeforeClass
     public void setUp() throws IOException {
@@ -29,6 +27,7 @@ public class BaseTest {
         inventoryPage = new InventoryPage();
         cartPage = new CartPage();
         inventoryDetailsPage = new InventoryDetailsPage();
+        checkoutPages = new CheckoutPages();
 
         //adding excel document data, insert filePath bellow
         excelReader = new ExcelReader("C:\\Users\\sm-denkovicn\\Desktop\\TestData.xlsx");

@@ -65,14 +65,14 @@ public class InventoryPageTest extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
-    /*@Test
+    @Test
     public void removeAllItemsFromCart () throws InterruptedException {
         inventoryPage.addAllItemsToCart();
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "6");
         Thread.sleep(3000);
         inventoryPage.removeAllItemsFromCart();
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
-    }*/
+    }
 
     @Test
     public void sortItemsByGivenCriteria () {
@@ -130,11 +130,14 @@ public class InventoryPageTest extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
+    @Test
+    public void addSpecifiedNumberOfItemsToCart () throws InterruptedException {
+        inventoryPage.addSpecificNumberOfItems(2);
+        Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "2");
+    }
 
-
-
-    /*@AfterMethod
+    @AfterMethod
     public void closeBrowser() {
         driver.close();
-    }*/
+    }
 }

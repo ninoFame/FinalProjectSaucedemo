@@ -34,7 +34,7 @@ public class InventoryPage extends BaseTest {
         resetAppStateButton.click();
     }
 
-    //____________________Cart Icom
+    //____________________Cart Icon
     @FindBy(id = "shopping_cart_container")
     public WebElement shoppingCartButton;
 
@@ -113,7 +113,15 @@ public class InventoryPage extends BaseTest {
         }
     }
 
-    @FindBy(css = ".btn.btn_primary.btn_small.btn_inventory")
+    public void addSpecificNumberOfItems(int numberOfItems) throws InterruptedException {
+        for (int i = numberOfItems - 1; i >= 0; i--) {
+            if (AddToCartButton.get(i).getText().equals("Add to cart"))
+                Thread.sleep(500);
+            AddToCartButton.get(i).click();
+        }
+    }
+
+    @FindBy(css = ".btn.btn_secondary.btn_small.btn_inventory")
     public List<WebElement> removeFromCartButton;
 
     public void removeAllItemsFromCart() throws InterruptedException {

@@ -12,13 +12,14 @@ public class CartPage extends BaseTest {
         PageFactory.initElements(driver, this);
     }
 
+    //__________________list of all/one of the items in the cart
     @FindBy(className = "inventory_item_name")
-    public List<WebElement> inventoryItems; // list of all the items in the cart
+    public List<WebElement> inventoryItems;
 
     @FindBy(className = "inventory_item_name")
-    public WebElement inventoryItem; //just one item
+    public WebElement inventoryItem;
 
-    //this returns the name of the cart we define
+    //returns the name of the item in the cart we define, to check weather a specific item is in a cart
     public String returnInventoryElementName(String name) {
         String inventoryElement = "";
         for (int i = 0; i < inventoryItems.size(); i++) {
@@ -28,5 +29,33 @@ public class CartPage extends BaseTest {
             }
         }
         return inventoryElement;
+    }
+
+    //_________________continue shopping button
+    @FindBy(id = "continue-shopping")
+    public WebElement continueShoppingButton;
+
+    public void clickOnContinueShopping() {
+        continueShoppingButton.click();
+    }
+
+    //________________checkout button
+    @FindBy(id = "checkout")
+    public WebElement checkoutButton;
+
+    public void clickOnCheckoutButton() {
+        checkoutButton.click();
+    }
+
+    //_____________remove all items from cart
+    @FindBy(css = ".btn.btn_secondary.btn_small.cart_button")
+    public List<WebElement> removeFromCartButton;
+
+    public void removeAllItemsFromCart() throws InterruptedException {
+        for (int i = removeFromCartButton.size() - 1; i >= 0; i--) {
+            if (removeFromCartButton.get(i).getText().equals("Remove"))
+                Thread.sleep(500);
+            removeFromCartButton.get(i).click();
+        }
     }
 }
