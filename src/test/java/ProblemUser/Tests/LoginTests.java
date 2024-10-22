@@ -1,4 +1,4 @@
-package Tests;
+package ProblemUser.Tests;
 
 import Base.BaseTest;
 import Pages.LoginPage;
@@ -35,7 +35,7 @@ public class LoginTests extends BaseTest {
     @Test()
     public void userCanLoginWithValidCredentials() {
         loginPage.usernameField.clear();
-        loginPage.usernameField.sendKeys("standard_user");
+        loginPage.usernameField.sendKeys("problem_user");
         loginPage.passwordField.clear();
         loginPage.passwordField.sendKeys("secret_sauce");
         loginPage.clickOnLoginButton();

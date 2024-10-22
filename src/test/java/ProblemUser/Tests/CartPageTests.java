@@ -1,4 +1,4 @@
-package Tests;
+package ProblemUser.Tests;
 
 import Base.BaseTest;
 import Pages.*;
@@ -24,7 +24,7 @@ public class CartPageTests extends BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.navigate().to("https://www.saucedemo.com/");
         loginPage.usernameField.clear();
-        loginPage.usernameField.sendKeys("standard_user");
+        loginPage.usernameField.sendKeys("problem_user");
         loginPage.passwordField.clear();
         loginPage.passwordField.sendKeys("secret_sauce");
         loginPage.clickOnLoginButton();

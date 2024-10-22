@@ -1,8 +1,6 @@
-package Tests;
+package ProblemUser.Tests;
 
 import Base.BaseTest;
-import Pages.InventoryPage;
-import Pages.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,9 +12,6 @@ public class LoginTestExcel extends BaseTest {
     @BeforeMethod
     public void pageSetUp() {
         driver = new ChromeDriver();
-        loginPage = new LoginPage();
-        inventoryPage = new InventoryPage();
-
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.navigate().to("https://www.saucedemo.com/");

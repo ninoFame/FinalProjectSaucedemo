@@ -50,6 +50,7 @@ public class CartPage extends BaseTest {
     }
 
     //_____________Remove all items from cart
+
     @FindBy(css = ".btn.btn_secondary.btn_small.cart_button")
     public List<WebElement> removeFromCartButton;
 
@@ -60,4 +61,19 @@ public class CartPage extends BaseTest {
             removeFromCartButton.get(i).click();
         }
     }
+
+    //____________Specific item in cart
+    @FindBy (className = "inventory_item_name")
+    public List<WebElement> listOfItemNames;
+
+    public void checkIfItemIsInCart (String itemName) {
+        boolean itemIsInCart = false;
+        for (int i = 0; i<listOfItemNames.size(); i++) {
+            if (listOfItemNames.get(i).getText().equals(itemName)) {
+                itemIsInCart = true;
+                break;
+            }
+        }
+    }
+
 }

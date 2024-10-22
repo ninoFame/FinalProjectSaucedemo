@@ -1,4 +1,4 @@
-package Tests;
+package ProblemUser.Tests;
 
 import Base.BaseTest;
 import Pages.CartPage;
@@ -26,7 +26,7 @@ public class InventoryPageTests extends BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.navigate().to("https://www.saucedemo.com/");
         loginPage.usernameField.clear();
-        loginPage.usernameField.sendKeys("standard_user");
+        loginPage.usernameField.sendKeys("problem_user");
         loginPage.passwordField.clear();
         loginPage.passwordField.sendKeys("secret_sauce");
         loginPage.clickOnLoginButton();
@@ -150,14 +150,12 @@ public class InventoryPageTests extends BaseTest {
         String item2 = "Sauce Labs Fleece Jacket";
         String item3 = "Test.allTheThings() T-Shirt (Red)";
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
-
         inventoryPage.addSpecificProductToCart(item1);
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "1");
         inventoryPage.addSpecificProductToCart(item2);
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "2");
         inventoryPage.addSpecificProductToCart(item3);
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "3");
-
         inventoryPage.clickOnShoppingCartButton();
         cartPage.checkIfItemIsInCart(item1);
         cartPage.checkIfItemIsInCart(item2);
@@ -170,7 +168,7 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "2");
     }
 
-  @AfterMethod
+   @AfterMethod
     public void tearDownPage() {
         driver.close();
     }

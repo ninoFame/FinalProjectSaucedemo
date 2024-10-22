@@ -1,8 +1,7 @@
-package Tests;
+package ProblemUser.Tests;
 
 import Base.BaseTest;
 import Pages.*;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -26,7 +25,7 @@ public class CheckoutPageTests extends BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         driver.navigate().to("https://www.saucedemo.com/");
         loginPage.usernameField.clear();
-        loginPage.usernameField.sendKeys("standard_user");
+        loginPage.usernameField.sendKeys("problem_user");
         loginPage.passwordField.clear();
         loginPage.passwordField.sendKeys("secret_sauce");
         loginPage.clickOnLoginButton();

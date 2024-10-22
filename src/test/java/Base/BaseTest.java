@@ -18,17 +18,18 @@ public class BaseTest {
     public CartPage cartPage;
     public InventoryDetailsPage inventoryDetailsPage;
     public CheckoutPages checkoutPages;
+    public PageFooter pageFooter;
 
     @BeforeClass
     public void setUp() throws IOException {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
         loginPage = new LoginPage();
         inventoryPage = new InventoryPage();
         cartPage = new CartPage();
         inventoryDetailsPage = new InventoryDetailsPage();
         checkoutPages = new CheckoutPages();
+        pageFooter = new PageFooter();
 
         //adding excel document data, insert filePath bellow
         excelReader = new ExcelReader("C:\\Users\\sm-denkovicn\\Desktop\\TestData.xlsx");

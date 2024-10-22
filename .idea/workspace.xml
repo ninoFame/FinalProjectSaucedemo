@@ -4,17 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d00495-f1a6-47b5-9188-ee785fc52e67" name="Changes" comment="Test Cases For &quot;Cart Page&quot; and &quot;Checkout Page&quot; added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutPageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/EndToEndTest.java" afterDir="false" />
+    <list default="true" id="f3d00495-f1a6-47b5-9188-ee785fc52e67" name="Changes" comment="Additional test cases for all the pages and End to end test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/PageFooter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/CartPageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/CheckoutPageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/EndToEndTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/InventoryPageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTestExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/PageFooterTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PageFooterTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CheckoutPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CheckoutPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CartPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CartPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/InventoryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CartPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CartPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTestExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +69,7 @@
     "TestNG.CartPageTest.executor": "Run",
     "TestNG.CartPageTest.removeItemFromCart.executor": "Run",
     "TestNG.CartPageTest.returnToInventoryPage.executor": "Run",
+    "TestNG.CartPageTests.executor": "Run",
     "TestNG.CheckoutPageTests.cancelFromCheckout.executor": "Run",
     "TestNG.CheckoutPageTests.checkoutWithValidData.executor": "Run",
     "TestNG.CheckoutPageTests.executor": "Run",
@@ -78,28 +87,40 @@
     "TestNG.InventoryPageTest.resetAppState.executor": "Run",
     "TestNG.InventoryPageTest.sortItems.executor": "Run",
     "TestNG.InventoryPageTest.userCanLogOut.executor": "Run",
+    "TestNG.InventoryPageTests.addAllItemsToCart.executor": "Debug",
+    "TestNG.InventoryPageTests.addSpecificItemToCart.executor": "Run",
+    "TestNG.InventoryPageTests.executor": "Run",
+    "TestNG.InventoryPageTests.resetAppState.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
     "TestNG.LoginTest.userCanLogin.executor": "Run",
     "TestNG.LoginTest.userLoginExcelValid.executor": "Run",
     "TestNG.LoginTest.userLoginWithEmptyCredentials.executor": "Run",
+    "TestNG.LoginTestExcel.executor": "Run",
     "TestNG.LoginTestExcel.userLoginExcelValid.executor": "Run",
+    "TestNG.LoginTests.executor": "Run",
+    "TestNG.LoginTests.userCanLoginWithValidCredentials.executor": "Run",
     "TestNG.PageFooterTests.executor": "Run",
     "TestNG.PageFooterTests.redirectionToSocialMediaFacebook.executor": "Run",
     "TestNG.PageFooterTests.redirectionToSocialMediaX.executor": "Run",
+    "TestNG.PageFooterTests.userCanOpenXAccount.executor": "Run",
+    "TestNG.ProblemUser.Tests.CartPageTests and 6 more.executor": "Run",
     "TestNG.Tests.CartPageTest and 3 more.executor": "Run",
     "TestNG.Tests.CartPageTests and 5 more.executor": "Run",
+    "TestNG.Tests.CartPageTests and 6 more.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sm-denkovicn/Downloads/FinalProjectSaucedemo/demoFiles"
+    "last_opened_file_path": "C:/Users/sm-denkovicn/Downloads/FinalProjectSaucedemo/src/test/java/DifferentUsersTest"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sm-denkovicn\Downloads\FinalProjectSaucedemo\src\test\java\DifferentUsersTest" />
+      <recent name="C:\Users\sm-denkovicn\Downloads\FinalProjectSaucedemo\src\test\java" />
       <recent name="C:\Users\sm-denkovicn\Downloads\FinalProjectSaucedemo\demoFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Tests.CartPageTests and 5 more">
-    <configuration name="CheckoutPageTests.cancelFromCheckout" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ProblemUser.Tests.CartPageTests and 6 more">
+    <configuration name="InventoryPageTests.addSpecificItemToCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +129,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutPageTests" />
-      <option name="METHOD_NAME" value="cancelFromCheckout" />
+      <option name="MAIN_CLASS_NAME" value="Tests.InventoryPageTests" />
+      <option name="METHOD_NAME" value="addSpecificItemToCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -117,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckoutPageTests.checkoutWithValidData" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTestExcel" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
@@ -126,34 +147,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.CheckoutPageTests" />
-      <option name="METHOD_NAME" value="checkoutWithValidData" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginTestExcel" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageFooterTests.redirectionToSocialMediaFacebook" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FinalProjectSaucedemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PageFooterTests" />
-      <option name="METHOD_NAME" value="redirectionToSocialMediaFacebook" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PageFooterTests.redirectionToSocialMediaX" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageFooterTests.userCanOpenXAccount" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
@@ -163,7 +165,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.PageFooterTests" />
-      <option name="METHOD_NAME" value="redirectionToSocialMediaX" />
+      <option name="METHOD_NAME" value="userCanOpenXAccount" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -171,7 +173,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.CartPageTests and 5 more" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProblemUser.Tests.CartPageTests and 6 more" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProjectSaucedemo" />
+      <option name="TEST_OBJECT" value="PATTERN" />
+      <properties />
+      <listeners />
+      <patterns>
+        <pattern testClass="ProblemUser.Tests.CartPageTests" />
+        <pattern testClass="ProblemUser.Tests.CheckoutPageTests" />
+        <pattern testClass="ProblemUser.Tests.EndToEndTest" />
+        <pattern testClass="ProblemUser.Tests.InventoryPageTests" />
+        <pattern testClass="ProblemUser.Tests.LoginTestExcel" />
+        <pattern testClass="ProblemUser.Tests.LoginTests" />
+        <pattern testClass="ProblemUser.Tests.PageFooterTests" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.CartPageTests and 6 more" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <option name="TEST_OBJECT" value="PATTERN" />
       <properties />
@@ -183,6 +203,7 @@
         <pattern testClass="Tests.InventoryPageTests" />
         <pattern testClass="Tests.LoginTestExcel" />
         <pattern testClass="Tests.LoginTests" />
+        <pattern testClass="Tests.PageFooterTests" />
       </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -190,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Tests.CartPageTests and 5 more" />
-        <item itemvalue="TestNG.PageFooterTests.redirectionToSocialMediaX" />
-        <item itemvalue="TestNG.PageFooterTests.redirectionToSocialMediaFacebook" />
-        <item itemvalue="TestNG.CheckoutPageTests.checkoutWithValidData" />
-        <item itemvalue="TestNG.CheckoutPageTests.cancelFromCheckout" />
+        <item itemvalue="TestNG.ProblemUser.Tests.CartPageTests and 6 more" />
+        <item itemvalue="TestNG.Tests.CartPageTests and 6 more" />
+        <item itemvalue="TestNG.InventoryPageTests.addSpecificItemToCart" />
+        <item itemvalue="TestNG.LoginTestExcel" />
+        <item itemvalue="TestNG.PageFooterTests.userCanOpenXAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729541430568</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Additional test cases for all the pages and End to end test">
+      <option name="closed" value="true" />
+      <created>1729601294741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729601294741</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,7 +287,8 @@
     <MESSAGE value="Basic login tests added" />
     <MESSAGE value="Test Cases For &quot;Inventory Page&quot; and &quot;Inventory Details Page&quot; added" />
     <MESSAGE value="Test Cases For &quot;Cart Page&quot; and &quot;Checkout Page&quot; added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Cases For &quot;Cart Page&quot; and &quot;Checkout Page&quot; added" />
+    <MESSAGE value="Additional test cases for all the pages and End to end test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Additional test cases for all the pages and End to end test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
