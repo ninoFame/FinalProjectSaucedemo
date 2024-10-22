@@ -1,4 +1,4 @@
-package Tests;
+package StandardUser.Tests;
 
 import Base.BaseTest;
 import Pages.*;
