@@ -25,13 +25,13 @@ public class LoginTestExcel extends BaseTest {
             loginPage.passwordField.sendKeys(validPassword);
             loginPage.clickOnLoginButton();
             inventoryPage.burgerMenu.click();
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             inventoryPage.logOutButton.click();
         }
     }
 
     @AfterMethod
-    public void closeBrowser() {
+    public void tearDownPage() {
         driver.close();
     }
 }

@@ -11,10 +11,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.io.IOException;
 import java.time.Duration;
 
-public class InventoryPageTest extends BaseTest {
+public class InventoryPageTests extends BaseTest {
     @BeforeMethod
     public void pageSetUp() {
         driver = new ChromeDriver();
@@ -24,7 +23,7 @@ public class InventoryPageTest extends BaseTest {
         inventoryDetailsPage = new InventoryDetailsPage();
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
         driver.navigate().to("https://www.saucedemo.com/");
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("standard_user");
@@ -137,7 +136,7 @@ public class InventoryPageTest extends BaseTest {
     }
 
     @AfterMethod
-    public void closeBrowser() {
+    public void tearDownPage() {
         driver.close();
     }
 }

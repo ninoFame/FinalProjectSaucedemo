@@ -1,7 +1,6 @@
 package Tests;
 
 import Base.BaseTest;
-import Base.ExcelReader;
 import Pages.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -12,7 +11,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.time.Duration;
 
-public class LoginTest extends BaseTest {
+public class LoginTests extends BaseTest {
 
     @BeforeMethod
     public void pageSetUp() throws IOException {
@@ -20,13 +19,12 @@ public class LoginTest extends BaseTest {
         loginPage = new LoginPage();
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
         driver.navigate().to("https://www.saucedemo.com/");
     }
 
     //Login Tests with manual String data
-    //TestCase 001
-    @Test (priority = 1)
+    @Test ()
     public void pageElementsAreVisible() {
         Assert.assertTrue(loginPage.swagLabs.isDisplayed());
         Assert.assertTrue(loginPage.usernameField.isDisplayed());
@@ -35,8 +33,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(loginPage.logginCredentials.isDisplayed());
     }
 
-    //TestCase002
-    @Test (priority = 2)
+    @Test ()
     public void userCanLoginWithValidCredentials () {
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("standard_user");
@@ -46,8 +43,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html");
     }
 
-    //TestCase003
-    @Test (priority = 3)
+    @Test ()
     public void userCanNotLoginWithInvalidUsernameValidPassword () {
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("invalidusername");
@@ -58,8 +54,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(loginPage.errorMessage.getText(), "Epic sadface: Username and password do not match any user in this service");
     }
 
-    //TestCase004
-    @Test (priority = 4)
+    @Test ()
     public void userCanNotLoginWithValidUsernameInvalidPassword () {
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("standard_user");
@@ -70,7 +65,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(loginPage.errorMessage.getText(), "Epic sadface: Username and password do not match any user in this service");
     }
 
-    @Test (priority = 5)
+    @Test ()
     public void userCanNotLoginWithEmptyCredentials () {
         loginPage.usernameField.clear();
         loginPage.passwordField.clear();
@@ -80,7 +75,7 @@ public class LoginTest extends BaseTest {
     }
 
    @AfterMethod
-   public void tearDown() {
+   public void tearDownPage() {
        driver.close();
     }
 }

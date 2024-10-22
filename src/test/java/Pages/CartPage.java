@@ -12,14 +12,15 @@ public class CartPage extends BaseTest {
         PageFactory.initElements(driver, this);
     }
 
-    //__________________list of all/one of the items in the cart
+    //__________________List of all/one of the items in the cart
+
     @FindBy(className = "inventory_item_name")
     public List<WebElement> inventoryItems;
 
     @FindBy(className = "inventory_item_name")
     public WebElement inventoryItem;
 
-    //returns the name of the item in the cart we define, to check weather a specific item is in a cart
+    //Returns the name of the item in the cart we define in the test, to check whether a specific item is in the cart
     public String returnInventoryElementName(String name) {
         String inventoryElement = "";
         for (int i = 0; i < inventoryItems.size(); i++) {
@@ -31,7 +32,8 @@ public class CartPage extends BaseTest {
         return inventoryElement;
     }
 
-    //_________________continue shopping button
+    //_________________Continue shopping button
+
     @FindBy(id = "continue-shopping")
     public WebElement continueShoppingButton;
 
@@ -39,7 +41,7 @@ public class CartPage extends BaseTest {
         continueShoppingButton.click();
     }
 
-    //________________checkout button
+    //________________Checkout button
     @FindBy(id = "checkout")
     public WebElement checkoutButton;
 
@@ -47,7 +49,7 @@ public class CartPage extends BaseTest {
         checkoutButton.click();
     }
 
-    //_____________remove all items from cart
+    //_____________Remove all items from cart
     @FindBy(css = ".btn.btn_secondary.btn_small.cart_button")
     public List<WebElement> removeFromCartButton;
 

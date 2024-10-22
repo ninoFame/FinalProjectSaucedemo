@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class CartPageTest extends BaseTest {
+public class CartPageTests extends BaseTest {
     @BeforeMethod
     public void pageSetUp() throws InterruptedException {
         driver = new ChromeDriver();
@@ -21,7 +21,7 @@ public class CartPageTest extends BaseTest {
         checkoutPages = new CheckoutPages();
 
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
         driver.navigate().to("https://www.saucedemo.com/");
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("standard_user");
@@ -45,19 +45,19 @@ public class CartPageTest extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
-   /* @Test
-    public void checkoutRedirection () throws InterruptedException {
+    @Test
+    public void checkoutRedirection() throws InterruptedException {
         cartPage.clickOnCheckoutButton();
         Thread.sleep(500);
         Assert.assertTrue(checkoutPages.firstNameField.isDisplayed());
         Assert.assertTrue(checkoutPages.lastNameField.isDisplayed());
         Assert.assertTrue(checkoutPages.zipPostalCodeField.isDisplayed());
         Assert.assertTrue(checkoutPages.continueButton.isDisplayed());
-        Assert.assertEquals(checkoutPages.checkoutTitle.getText(), "Checkout: Your Information\n");
-    }*/
+        Assert.assertEquals(checkoutPages.checkoutTitle.getText(), "Checkout: Your Information");
+    }
 
     @AfterMethod
-    public void closeBrowser() {
+    public void tearDownPage() {
         driver.close();
     }
 }
