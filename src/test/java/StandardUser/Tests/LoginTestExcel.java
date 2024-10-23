@@ -23,7 +23,7 @@ public class LoginTestExcel extends BaseTest {
     }
 
     //Login Tests with Excel data
-    @Test
+    @Test (priority = 8)
     public void verifyThatAllValidUsersCanLogin() throws InterruptedException {
         for (int i = 1; i <= excelReader.getLastRow("Sheet1"); i++) {
 

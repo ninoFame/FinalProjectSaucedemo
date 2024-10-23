@@ -1,6 +1,8 @@
 package ProblemUser.Tests;
 
 import Base.BaseTest;
+import Pages.CartPage;
+import Pages.InventoryPage;
 import Pages.LoginPage;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -17,6 +19,8 @@ public class LoginTests extends BaseTest {
     public void pageSetUp() throws IOException {
         driver = new ChromeDriver();
         loginPage = new LoginPage();
+        inventoryPage = new InventoryPage();
+        cartPage = new CartPage();
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));

@@ -25,8 +25,8 @@ public class EndToEndTest extends BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
     }
 
-    @Test
-    public void endToEndHappyPath () throws InterruptedException {
+    @Test(priority = 1)
+    public void endToEndHappyPath() throws InterruptedException {
         driver.navigate().to("https://www.saucedemo.com/");
         loginPage.usernameField.clear();
         loginPage.usernameField.sendKeys("standard_user");

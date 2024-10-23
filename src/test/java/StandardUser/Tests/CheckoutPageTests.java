@@ -36,7 +36,7 @@ public class CheckoutPageTests extends BaseTest {
         cartPage.clickOnCheckoutButton();
     }
 
-    @Test
+    @Test (priority = 27)
     public void cancelFromCheckout() throws InterruptedException {
         Thread.sleep(500);
         checkoutPages.clickOnCancelButton();
@@ -45,7 +45,7 @@ public class CheckoutPageTests extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "1");
     }
 
-    @Test
+    @Test (priority = 28)
     public void checkoutWithValidData() {
         checkoutPages.firstNameField.sendKeys("Firstname");
         checkoutPages.lastNameField.sendKeys("Lastname");
@@ -61,7 +61,7 @@ public class CheckoutPageTests extends BaseTest {
         Assert.assertTrue(checkoutPages.backHomeButton.isDisplayed());
     }
 
-    @Test
+    @Test (priority = 29)
     public void returnToHomepageAfterSuccessfulCheckout() {
         checkoutPages.firstNameField.sendKeys("Firstname");
         checkoutPages.lastNameField.sendKeys("Lastname");
@@ -80,7 +80,7 @@ public class CheckoutPageTests extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
-    @Test
+    @Test (priority = 30)
     public void checkoutWithNoData() {
         checkoutPages.clickOnContinueButton();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-one.html");

@@ -32,20 +32,20 @@ public class CartPageTests extends BaseTest {
         inventoryPage.clickOnShoppingCartButton();
     }
 
-    @Test
+    @Test (priority = 24)
     public void returnToInventoryPage() {
         cartPage.clickOnContinueShopping();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory.html");
     }
 
-    @Test
+    @Test (priority = 25)
     public void removeItemFromCart() throws InterruptedException {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "1");
         cartPage.removeAllItemsFromCart();
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
-    @Test
+    @Test (priority = 26)
     public void checkoutRedirection() throws InterruptedException {
         cartPage.clickOnCheckoutButton();
         Thread.sleep(500);

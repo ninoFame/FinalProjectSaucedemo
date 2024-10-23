@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3d00495-f1a6-47b5-9188-ee785fc52e67" name="Changes" comment="Additional test cases for all the pages and End to end test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/PageFooter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/CartPageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/CheckoutPageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/EndToEndTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/InventoryPageTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTestExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/PageFooterTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/PageFooterTests.java" afterDir="false" />
+    <list default="true" id="f3d00495-f1a6-47b5-9188-ee785fc52e67" name="Changes" comment="Upgrades and refinements.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/InventoryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/InventoryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CartPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CartPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/CheckoutPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/CheckoutPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/InventoryPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTestExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTestExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CartPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CartPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CheckoutPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CheckoutPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/EndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/EndToEndTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/InventoryPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/InventoryPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTestExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTestExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/PageFooterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/PageFooterTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +88,16 @@
     "TestNG.LoginTest.userLoginWithEmptyCredentials.executor": "Run",
     "TestNG.LoginTestExcel.executor": "Run",
     "TestNG.LoginTestExcel.userLoginExcelValid.executor": "Run",
+    "TestNG.LoginTests (1).executor": "Run",
     "TestNG.LoginTests.executor": "Run",
+    "TestNG.LoginTests.pageElementsAreVisible.executor": "Run",
     "TestNG.LoginTests.userCanLoginWithValidCredentials.executor": "Run",
     "TestNG.PageFooterTests.executor": "Run",
     "TestNG.PageFooterTests.redirectionToSocialMediaFacebook.executor": "Run",
     "TestNG.PageFooterTests.redirectionToSocialMediaX.executor": "Run",
     "TestNG.PageFooterTests.userCanOpenXAccount.executor": "Run",
     "TestNG.ProblemUser.Tests.CartPageTests and 6 more.executor": "Run",
+    "TestNG.StandardUser.Tests.CartPageTests and 6 more.executor": "Run",
     "TestNG.Tests.CartPageTest and 3 more.executor": "Run",
     "TestNG.Tests.CartPageTests and 5 more.executor": "Run",
     "TestNG.Tests.CartPageTests and 6 more.executor": "Run",
@@ -119,35 +113,17 @@
       <recent name="C:\Users\sm-denkovicn\Downloads\FinalProjectSaucedemo\demoFiles" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ProblemUser.Tests.CartPageTests and 6 more">
-    <configuration name="InventoryPageTests.addSpecificItemToCart" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.StandardUser.Tests.CartPageTests and 6 more">
+    <configuration name="LoginTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="StandardUser.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.InventoryPageTests" />
-      <option name="METHOD_NAME" value="addSpecificItemToCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTestExcel" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FinalProjectSaucedemo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.LoginTestExcel" />
+      <option name="PACKAGE_NAME" value="StandardUser.Tests" />
+      <option name="MAIN_CLASS_NAME" value="StandardUser.Tests.LoginTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -155,17 +131,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PageFooterTests.userCanOpenXAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTests.pageElementsAreVisible" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tests.*" />
+          <option name="PATTERN" value="StandardUser.Tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.PageFooterTests" />
-      <option name="METHOD_NAME" value="userCanOpenXAccount" />
+      <option name="PACKAGE_NAME" value="StandardUser.Tests" />
+      <option name="MAIN_CLASS_NAME" value="StandardUser.Tests.LoginTests" />
+      <option name="METHOD_NAME" value="pageElementsAreVisible" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.userCanLoginWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FinalProjectSaucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StandardUser.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StandardUser.Tests" />
+      <option name="MAIN_CLASS_NAME" value="StandardUser.Tests.LoginTests" />
+      <option name="METHOD_NAME" value="userCanLoginWithValidCredentials" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -191,19 +185,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tests.CartPageTests and 6 more" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="StandardUser.Tests.CartPageTests and 6 more" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <option name="TEST_OBJECT" value="PATTERN" />
       <properties />
       <listeners />
       <patterns>
-        <pattern testClass="Tests.CartPageTests" />
-        <pattern testClass="Tests.CheckoutPageTests" />
-        <pattern testClass="Tests.EndToEndTest" />
-        <pattern testClass="Tests.InventoryPageTests" />
-        <pattern testClass="Tests.LoginTestExcel" />
-        <pattern testClass="Tests.LoginTests" />
-        <pattern testClass="Tests.PageFooterTests" />
+        <pattern testClass="StandardUser.Tests.CartPageTests" />
+        <pattern testClass="StandardUser.Tests.CheckoutPageTests" />
+        <pattern testClass="StandardUser.Tests.EndToEndTest" />
+        <pattern testClass="StandardUser.Tests.InventoryPageTests" />
+        <pattern testClass="StandardUser.Tests.LoginTestExcel" />
+        <pattern testClass="StandardUser.Tests.LoginTests" />
+        <pattern testClass="StandardUser.Tests.PageFooterTests" />
       </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
@@ -211,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.StandardUser.Tests.CartPageTests and 6 more" />
+        <item itemvalue="TestNG.LoginTests.pageElementsAreVisible" />
+        <item itemvalue="TestNG.LoginTests (1)" />
+        <item itemvalue="TestNG.LoginTests.userCanLoginWithValidCredentials" />
         <item itemvalue="TestNG.ProblemUser.Tests.CartPageTests and 6 more" />
-        <item itemvalue="TestNG.Tests.CartPageTests and 6 more" />
-        <item itemvalue="TestNG.InventoryPageTests.addSpecificItemToCart" />
-        <item itemvalue="TestNG.LoginTestExcel" />
-        <item itemvalue="TestNG.PageFooterTests.userCanOpenXAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +262,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729601294741</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added more tests for all of the pages, and added all tests for another user">
+      <option name="closed" value="true" />
+      <created>1729627183619</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729627183619</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added more tests for all of the pages, and added all tests for another user">
+      <option name="closed" value="true" />
+      <created>1729627246452</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729627246452</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,21 +298,8 @@
     <MESSAGE value="Test Cases For &quot;Inventory Page&quot; and &quot;Inventory Details Page&quot; added" />
     <MESSAGE value="Test Cases For &quot;Cart Page&quot; and &quot;Checkout Page&quot; added" />
     <MESSAGE value="Additional test cases for all the pages and End to end test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional test cases for all the pages and End to end test" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/Tests/CheckoutPageTests.java</url>
-          <line>39</line>
-          <properties class="Tests.CheckoutPageTests" method="cancelFromCheckout">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added more tests for all of the pages, and added all tests for another user" />
+    <MESSAGE value="Upgrades and refinements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrades and refinements." />
   </component>
 </project>

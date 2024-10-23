@@ -31,7 +31,7 @@ public class PageFooterTests extends BaseTest {
         loginPage.clickOnLoginButton();
     }
 
-    @Test
+    @Test (priority = 9)
     public void userCanOpenXAccount () throws InterruptedException {
         pageFooter.clickOnXIcon();
         ArrayList<String> tablist = new ArrayList<>(driver.getWindowHandles());
@@ -40,7 +40,7 @@ public class PageFooterTests extends BaseTest {
         Assert.assertEquals(driver.getCurrentUrl(), "https://twitter.com/saucelabs");
     }
 
-    @Test
+    @Test (priority = 10)
     public void userCanOpenFacebookAccount () throws InterruptedException {
         pageFooter.clickOnFacebookIcon();;
         ArrayList<String> tablist = new ArrayList<>(driver.getWindowHandles());
@@ -49,7 +49,7 @@ public class PageFooterTests extends BaseTest {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/saucelabs");
     }
 
-    @Test
+    @Test (priority = 11)
     public void userCanOpenLinkedinAccount () throws InterruptedException {
         pageFooter.clickOnLinkedinIcon();
         ArrayList<String> tablist = new ArrayList<>(driver.getWindowHandles());

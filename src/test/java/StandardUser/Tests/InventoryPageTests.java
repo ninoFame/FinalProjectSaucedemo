@@ -32,7 +32,7 @@ public class InventoryPageTests extends BaseTest {
         loginPage.clickOnLoginButton();
     }
 
-    @Test
+    @Test (priority = 12)
     public void addOneItemToCart() {
         inventoryPage.addBackpackToCart();
         //assert that the amount of items added it correct
@@ -43,7 +43,7 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertEquals(cartPage.returnInventoryElementName(name), name);
     }
 
-    @Test
+    @Test (priority = 13)
     public void addAllItemsToCart() throws InterruptedException {
         inventoryPage.addAllItemsToCart();
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "6");
@@ -53,7 +53,7 @@ public class InventoryPageTests extends BaseTest {
         }
     }
 
-    @Test
+    @Test (priority = 14)
     public void removeOneItemToCart() {
         inventoryPage.addBackpackToCart();
         //assert that the amount of items added it correct
@@ -67,7 +67,7 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
-    @Test
+    @Test (priority = 15)
     public void removeAllItemsFromCart() throws InterruptedException {
         inventoryPage.addAllItemsToCart();
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "6");
@@ -76,7 +76,7 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
-    @Test
+    @Test (priority = 16)
     public void sortItemsByGivenCriteria() {
         inventoryPage.selectSortOption("Name (A to Z)");
         Assert.assertEquals(inventoryPage.currentSortOption.getText(), "Name (A to Z)");
@@ -88,7 +88,7 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertEquals(inventoryPage.currentSortOption.getText(), "Price (high to low)");
     }
 
-    @Test
+    @Test (priority = 17)
     public void userCanLogOut() throws InterruptedException {
         inventoryPage.burgerMenu.click();
         Thread.sleep(2000);
@@ -98,14 +98,14 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertTrue(loginPage.loginButton.isDisplayed());
     }
 
-    @Test
+    @Test (priority = 18)
     public void clickAndViewOneProduct() throws InterruptedException {
         Thread.sleep(1000);
         inventoryDetailsPage.viewInventoryItem("Sauce Labs Backpack");
         Assert.assertEquals(inventoryDetailsPage.inventoryDetailsName.getText(), "Sauce Labs Backpack");
     }
 
-    @Test
+    @Test (priority = 19)
     public void addItemToCartFromTheInventoryDetailsPage() throws InterruptedException {
         Thread.sleep(1000);
         String name = "Sauce Labs Backpack";
@@ -117,7 +117,7 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertEquals(cartPage.returnInventoryElementName(name), name);
     }
 
-    @Test
+    @Test (priority = 20)
     public void removeItemToCartFromTheInventoryDetailsPage() throws InterruptedException {
         Thread.sleep(1000);
         inventoryDetailsPage.viewInventoryItem("Sauce Labs Backpack");
@@ -127,7 +127,7 @@ public class InventoryPageTests extends BaseTest {
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "");
     }
 
-    @Test
+    @Test (priority = 21)
     public void resetAppState() throws InterruptedException {
         inventoryPage.addAllItemsToCart();
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "6");
@@ -144,7 +144,7 @@ public class InventoryPageTests extends BaseTest {
         }
     }
 
-    @Test
+    @Test (priority = 22)
     public void addSpecificItemToCart() {
         String item1 = "Sauce Labs Onesie";
         String item2 = "Sauce Labs Fleece Jacket";
@@ -164,7 +164,7 @@ public class InventoryPageTests extends BaseTest {
         cartPage.checkIfItemIsInCart(item3);
     }
 
-    @Test
+    @Test (priority = 23)
     public void addSpecifiedNumberOfItemsToCart() throws InterruptedException {
         inventoryPage.addSpecificNumberOfItems(2);
         Assert.assertEquals(inventoryPage.shoppingCartButton.getText(), "2");
