@@ -6,19 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f3d00495-f1a6-47b5-9188-ee785fc52e67" name="Changes" comment="Upgrades and refinements.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProblemUser/Tests/LoginTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CartPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CartPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CheckoutPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/CheckoutPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/EndToEndTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/EndToEndTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/InventoryPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/InventoryPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTestExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTestExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/PageFooterTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StandardUser/Tests/PageFooterTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="4" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,6 +93,7 @@
     "TestNG.PageFooterTests.executor": "Run",
     "TestNG.PageFooterTests.redirectionToSocialMediaFacebook.executor": "Run",
     "TestNG.PageFooterTests.redirectionToSocialMediaX.executor": "Run",
+    "TestNG.PageFooterTests.userCanOpenLinkedinAccount.executor": "Run",
     "TestNG.PageFooterTests.userCanOpenXAccount.executor": "Run",
     "TestNG.ProblemUser.Tests.CartPageTests and 6 more.executor": "Run",
     "TestNG.StandardUser.Tests.CartPageTests and 6 more.executor": "Run",
@@ -103,7 +102,8 @@
     "TestNG.Tests.CartPageTests and 6 more.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/sm-denkovicn/Downloads/FinalProjectSaucedemo/src/test/java/DifferentUsersTest"
+    "last_opened_file_path": "C:/Users/sm-denkovicn/Downloads/FinalProjectSaucedemo/src/test/java/DifferentUsersTest",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -149,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests.userCanLoginWithValidCredentials" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageFooterTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
       <extension name="coverage">
         <pattern>
@@ -158,29 +158,28 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="StandardUser.Tests" />
-      <option name="MAIN_CLASS_NAME" value="StandardUser.Tests.LoginTests" />
-      <option name="METHOD_NAME" value="userCanLoginWithValidCredentials" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="StandardUser.Tests.PageFooterTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProblemUser.Tests.CartPageTests and 6 more" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PageFooterTests.userCanOpenLinkedinAccount" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FinalProjectSaucedemo" />
-      <option name="TEST_OBJECT" value="PATTERN" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StandardUser.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StandardUser.Tests" />
+      <option name="MAIN_CLASS_NAME" value="StandardUser.Tests.PageFooterTests" />
+      <option name="METHOD_NAME" value="userCanOpenLinkedinAccount" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
-      <patterns>
-        <pattern testClass="ProblemUser.Tests.CartPageTests" />
-        <pattern testClass="ProblemUser.Tests.CheckoutPageTests" />
-        <pattern testClass="ProblemUser.Tests.EndToEndTest" />
-        <pattern testClass="ProblemUser.Tests.InventoryPageTests" />
-        <pattern testClass="ProblemUser.Tests.LoginTestExcel" />
-        <pattern testClass="ProblemUser.Tests.LoginTests" />
-        <pattern testClass="ProblemUser.Tests.PageFooterTests" />
-      </patterns>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,10 +205,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.StandardUser.Tests.CartPageTests and 6 more" />
+        <item itemvalue="TestNG.PageFooterTests.userCanOpenLinkedinAccount" />
+        <item itemvalue="TestNG.PageFooterTests" />
         <item itemvalue="TestNG.LoginTests.pageElementsAreVisible" />
         <item itemvalue="TestNG.LoginTests (1)" />
-        <item itemvalue="TestNG.LoginTests.userCanLoginWithValidCredentials" />
-        <item itemvalue="TestNG.ProblemUser.Tests.CartPageTests and 6 more" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729627246452</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Upgrades and refinements.">
+      <option name="closed" value="true" />
+      <created>1729699018937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729699018937</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

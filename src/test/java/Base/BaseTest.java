@@ -31,8 +31,7 @@ public class BaseTest {
         checkoutPages = new CheckoutPages();
         pageFooter = new PageFooter();
 
-        //adding excel document data, insert filePath bellow
-        excelReader = new ExcelReader("C:\\Users\\sm-denkovicn\\Desktop\\TestData.xlsx");
+        //to use this, download Excel document from the TestData package and insert filePath bellow
+        excelReader = new ExcelReader("TestData\\TestData.xlsx");
     }
-
 }

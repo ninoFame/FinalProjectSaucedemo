@@ -36,7 +36,7 @@ public class PageFooterTests extends BaseTest {
         pageFooter.clickOnXIcon();
         ArrayList<String> tablist = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tablist.get(1));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), "https://twitter.com/saucelabs");
     }
 
@@ -45,7 +45,7 @@ public class PageFooterTests extends BaseTest {
         pageFooter.clickOnFacebookIcon();;
         ArrayList<String> tablist = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tablist.get(1));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/saucelabs");
     }
 
@@ -54,7 +54,7 @@ public class PageFooterTests extends BaseTest {
         pageFooter.clickOnLinkedinIcon();
         ArrayList<String> tablist = new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(tablist.get(1));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.linkedin.com/company/sauce-labs/");
     }
 
